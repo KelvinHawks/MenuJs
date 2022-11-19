@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(219, 236, 243);
+}
+.menu{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(61, 61, 61);
+}
+.Under-line{
+    
+    height: 2px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: goldenrod;
+}
+.buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.buttons button{
+    background-color: transparent;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: goldenrod;
+    padding: 4px;
+    margin-left: 8px;
+    width: 70px;
+}
+.buttons button:hover{
+    background-color: goldenrod;
+    color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 70px auto;
+}
+.img{
+    margin-right: 12px;
+    border: 2px solid goldenrod;
+    border-radius: 7px;
+}
+.img img{
+    border-radius: 5px;
+}
+.title{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(39, 37, 37);
+}
+.row-1{
+    display: flex;
+    width: 450px;
+}
+.text{
+    display: block;
+}
+.price{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: goldenrod;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 10px;
+}
+.para-graph{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+}
