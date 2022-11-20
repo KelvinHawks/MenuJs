@@ -67,17 +67,49 @@ const menu = [{
     img: "bugger.webp",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
-},]
+}]
 
 const columnSection = document.querySelector('.column')
 
-const btns = document.querySelectorAll('.filter-btn')
+const buttonsBtn = document.querySelector(".buttons")
+
+/*const btns = document.querySelectorAll('.filter-btn')*/
 
 
 window.addEventListener('DOMContentLoaded', function(){
     //console.log("you will make it. Keep pushing");
     displayMenuItems(menu)
     //console.log(displayMenu);
+    const categories = menu.reduce(function (value, item){
+        if(!value.includes(item.category)){
+            value.push(item.category)
+        }
+        return value
+    },
+    ['all'])
+    displayMenuButtons()
+    /*const categoryBtns = categories.map(function(category){
+        return `
+        <button class="filter-btn" data-id="${category}">${category}</button>`
+    }).join("")
+    buttonsBtn.innerHTML = categoryBtns
+    const btns = document.querySelectorAll('.filter-btn')
+    btns.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+            const category = e.currentTarget.dataset.id
+            const menuCategory = menu.filter(function (menuItem){
+    
+               if(menuItem.category === category){
+                return menuItem
+               }
+            })
+            if (category === 'all'){
+                displayMenuItems(menu)
+            }else{
+                displayMenuItems(menuCategory)
+            }
+        })
+    })*/
 })
 
 function displayMenuItems(menuItems){
@@ -106,7 +138,7 @@ function displayMenuItems(menuItems){
     //console.log(displayMenu);
 }
 
-btns.forEach(function(btn){
+/*btns.forEach(function(btn){
     btn.addEventListener('click', function(e){
         const category = e.currentTarget.dataset.id
         const menuCategory = menu.filter(function (menuItem){
@@ -121,4 +153,35 @@ btns.forEach(function(btn){
             displayMenuItems(menuCategory)
         }
     })
-})
+})*/
+function displayMenuButtons(){
+    const categories = menu.reduce(function (value, item){
+        if(!value.includes(item.category)){
+            value.push(item.category)
+        }
+        return value
+    },
+    ['all'])
+    const categoryBtns = categories.map(function(category){
+        return `
+        <button class="filter-btn" data-id="${category}">${category}</button>`
+    }).join("")
+    buttonsBtn.innerHTML = categoryBtns
+    const btns = document.querySelectorAll('.filter-btn')
+    btns.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+            const category = e.currentTarget.dataset.id
+            const menuCategory = menu.filter(function (menuItem){
+    
+               if(menuItem.category === category){
+                return menuItem
+               }
+            })
+            if (category === 'all'){
+                displayMenuItems(menu)
+            }else{
+                displayMenuItems(menuCategory)
+            }
+        })
+    })
+}
