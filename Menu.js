@@ -2,72 +2,73 @@ const menu = [{
     id: 1,
     title: "buttermilk pancakes",
     category: "breakfast",
-    price: 149,
-    img: "bugger.webp",
+    price: 213,
+    img: "index.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },
 {
     id: 2,
-    title: "buttermilk pancakes",
-    category: "lunch",
-    price: 149,
-    img: "bugger.webp",
+    title: "stair fair",
+    category: "supper",
+    price: 147,
+    img: "bugger1.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },
 {
     id: 3,
-    title: "buttermilk pancakes",
+    title: "Havard health",
     category: "shakes",
-    price: 149,
-    img: "bugger.webp",
+    price: 159,
+    img: "bugger3.avif",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },
 {
     id: 4,
-    title: "buttermilk pancakes",
+    title: "Best Bee",
     category: "breakfast",
-    price: 149,
-    img: "bugger.webp",
+    price: 135,
+    img: "bugger10.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },
 {
     id: 4,
-    title: "buttermilk pancakes",
+    title: "Traditional Mexican",
     category: "lunch",
-    price: 149,
-    img: "bugger.webp",
+    price: 120,
+    img: "bugger5.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },{
     id: 6,
-    title: "buttermilk pancakes",
+    title: "shutters tock",
     category: "shakes",
-    price: 149,
-    img: "bugger.webp",
+    price: 180,
+    img: "bugger6.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },{
     id: 7,
-    title: "buttermilk pancakes",
+    title: "Chaat masala",
     category: "breakfast",
-    price: 149,
-    img: "bugger.webp",
+    price: 160,
+    img: "bugger9.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
 },
 {
     id: 3,
-    title: "buttermilk pancakes",
+    title: "Filipino food",
     category: "shakes",
-    price: 149,
-    img: "bugger.webp",
+    price: 200,
+    img: "bugger8.jpg",
     paragraph: `I'm baby woke milkshk wolf bitters live edge
                 blue bottle, hammock freegan copper mug whatever cold pressed`
-}]
+}
+]
 
 const columnSection = document.querySelector('.column')
 

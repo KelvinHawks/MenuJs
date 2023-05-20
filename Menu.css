@@ -35,7 +35,22 @@ body{
     cursor: pointer;
 }
 
-
+.login-btn{
+    text-align: end;
+    margin: 25px 80px 0 0;
+}
+.login-btn button{
+    padding: 5px 13px;
+    width: 100px;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+}
+.login-btn button a{
+    text-decoration: none;
+    color: #fff;
+}
 .column{
     display: grid;
     grid-template-columns: 1fr 1fr;
